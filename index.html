@@ -12,6 +12,7 @@
       --accent:#2a6f97;
       --kkday:#8E9BAE;
       --klook:#A9B7AA;
+      --agoda:#a68a64; /* Agoda 新色 */
     }
     html,body{height:100%;margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--accent)}
     .wrap{max-width:980px;margin:32px auto;padding:28px}
@@ -64,6 +65,27 @@
     }
     .card.klook a.link:hover {
       background: #7b8e81;
+      color: #fff;
+    }
+    /* Agoda 樣式（使用 #a68a64）*/
+    .card.agoda h2,
+    .card.agoda a.link {
+      background: var(--agoda);
+      color: #fff;
+    }
+    .card.agoda h2 {
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .card.agoda a.link {
+      background: var(--agoda);
+      color: #fff;
+    }
+    .card.agoda a.link:hover {
+      /* 深色 hover 效果（比 #a68a64 稍深） */
+      background: #8d7555;
       color: #fff;
     }
     .small{font-size:12px;color:#666;margin-top:10px}
@@ -136,11 +158,10 @@
         </div>
       </section>
 
-      <section class="card Agoda">
+      <section class="card agoda">
         <h2>🌍【Agoda名古屋住宿】</h2>
         <div class="links">
           <a class="link" href="https://agoda.tp.st/rPpYwlm3" target="_blank" rel="noopener">名古屋站前R&B飯店</a>
-          <a class="link" href="https://agoda.tp.st/j17EQtPV" target="_blank" rel="noopener">飛驒高山華盛頓廣場飯店</a>
           <a class="link" href="https://agoda.tp.st/j17EQtPV" target="_blank" rel="noopener">飛驒高山華盛頓廣場飯店</a>
           <a class="link" href="https://agoda.tp.st/7YDEcq6F" target="_blank" rel="noopener">白川鄉之湯</a>
           <a class="link" href="https://agoda.tp.st/dmT8nFgB" target="_blank" rel="noopener">名古屋站前椿町維亞飯店</a>
